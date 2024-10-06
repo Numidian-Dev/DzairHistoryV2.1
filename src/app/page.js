@@ -19,7 +19,7 @@ export default function Home() {
         <div className="main-contents">
           <OtherArticles/>
           <Books/>
-          <Instagram/>
+         {/*  <Instagram/> */}
         </div>
         <aside>
           <SideBar/>

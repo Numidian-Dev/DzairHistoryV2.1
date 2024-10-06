@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const articles = require("./api/data");
@@ -91,9 +92,7 @@ app.get("/api/books/page/:page", (req, res) => {
   });
 });
 app.get("/api/instagram-posts", async (req, res) => {
-  const TOKEN =
-    "IGQWRNQ0ZAuRVg3N2xVTWVsbVc4VHRMWVY4TUtKYktiYjdVWlFsSWJtYVN5elNMcHJxblJYZAVk2LVlseGw1YkhzLURMdE9teEY3azBkMEt3UWhoNE5RNGY3dEpVYXZAaVGNCUjFWSGF5b2ZA6NzVoU2tnbVdVYTcyT0kZD";
-  const response =
+  const TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
     await axios.get(` https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
   `);
   const posts = await response.data;
