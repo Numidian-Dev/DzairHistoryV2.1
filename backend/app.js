@@ -100,8 +100,13 @@ app.get("/api/books/page/:page", (req, res) => {
 }); */
 
 app.get("/api/books", (req, res) => {
-  console.log(books.length)
   res.json(books);
+});
+
+app.get("/api/books/:id", (req, res) => {
+  const param = req.params.id
+  const book = books.filter(f=> f.id === param)
+  res.json(book);
 });
 
 app.get("/api/articles/search/:title", (req, res) => {

@@ -48,7 +48,7 @@ const Article = ({ data }) => {
            
             
         <ReactMarkdown /* children={data.body} */ rehypePlugins={[rehypeRaw]} >
-            {data.body.children}
+            {data.body}
         </ReactMarkdown>
       </article>
     </section>
