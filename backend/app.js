@@ -91,13 +91,13 @@ app.get("/api/books/page/:page", (req, res) => {
     data:pagination,
   });
 });
-app.get("/api/instagram-posts", async (req, res) => {
+/* app.get("/api/instagram-posts", async (req, res) => {
   const TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
     await axios.get(` https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
   `);
   const posts = await response.data;
   res.json(posts);
-});
+}); */
 
 app.get("/api/books", (req, res) => {
   console.log(books.length)

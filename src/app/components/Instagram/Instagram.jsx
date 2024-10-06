@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
@@ -91,3 +91,4 @@ const Instagram = () => {
   );
 };
 export default Instagram;
+ */
