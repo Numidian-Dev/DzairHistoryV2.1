@@ -1,0 +1,27 @@
+.aside-categorie {
+  width: 30%;
+
+  .sidebar-categorie {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}
+.sidebar-ads-title {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  .aside-categorie {
+    width: 100%;
+
+    .sidebar-categorie {
+      position: sticky;
+      top: 0;
+      width: 100%;
+    }
+  }
+  .sidebar-ads-title {
+    display: block;
+    //margin-left: -75px;
+  }
+}

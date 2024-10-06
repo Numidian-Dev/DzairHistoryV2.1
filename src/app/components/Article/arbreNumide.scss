@@ -1,0 +1,50 @@
+.arbre-numide {
+    background-color: $blackSecondary;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 10px 10px 10px 10px;
+    }
+}
+.arbre-zianide {
+    svg {
+        width: 100%;
+        height: 100%;
+        background-color: $blackSecondary;
+        padding: 10px;
+    }
+}
+
+/* @media screen and (max-width: 769px) {
+    .arbre-numide {
+        background-color: $blackSecondary;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 10px 10px 10px 10px;
+        }
+    }
+} */
+
+@media screen and (max-width: 526px) {
+    .arbre-numide {
+        svg {
+            background-color: $blackSecondary;
+            width: 100%;
+            height: 90%;
+            padding: 10px 10px 10px 10px;
+        }
+    }
+}

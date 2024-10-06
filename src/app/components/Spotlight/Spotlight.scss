@@ -1,0 +1,586 @@
+.spotlight{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: $inter
+}
+
+.container-spotlight{
+    display: flex;
+    justify-content: space-evenly;
+    .skelton-spotlight{
+        width: 73%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        background-color: #151515;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%);
+            background-image: linear-gradient(
+                90deg,
+                rgba(#242424, 0) 0,
+                rgba(#242424, 0.2) 20%,
+                rgba(#242424, 0.5) 60%,
+                rgba(#242424, 0)
+              );
+              animation: shimmer 2s infinite;
+              content: '';
+            }
+          
+            @keyframes shimmer {
+              100% {
+                transform: translateX(100%);
+              }
+            }
+    }
+    .active-content{
+        width: 73%;
+        height: 600px;
+        border-radius: 10px;
+        position: relative;
+        .img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            background: rgb(21,20,21);
+            background: linear-gradient(0deg, rgba(21,20,21,1) 10%, rgba(21, 20, 21, 0.24) 100%);
+            border-radius: 8px;
+            h1{
+                color: $white;
+                position: absolute;
+                bottom: 50px;
+                left: 40px;
+                font-size: 2rem;
+            }
+        }
+    }
+    .container-seklton-tab{
+        width: 330px;
+        height: 33.33%;
+      
+
+        .seklton-content{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                //background-color: blue;
+                padding: 5px;
+              
+
+                .seklton-tab{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    position: relative;
+                    background-color: #151515;
+                    position: relative;
+                    overflow: hidden;
+
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        transform: translateX(-100%);
+                        background-image: linear-gradient(
+                          90deg,
+                          rgba(#242424, 0) 0,
+                          rgba(#242424, 0.2) 20%,
+                          rgba(#242424, 0.5) 60%,
+                          rgba(#242424, 0)
+                        );
+                        animation: shimmer 2s infinite;
+                        content: '';
+                      }
+                    
+                      @keyframes shimmer {
+                        100% {
+                          transform: translateX(100%);
+                        }
+                      }
+                }
+        }
+    }
+    .container-tab{
+        height: 600px;
+        .tab-content{
+            width: 330px;
+            height: 33.33%;
+            padding: 5px;
+            .content{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                position: relative;
+                
+                    .img{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        };
+                    }
+                
+                .overlay{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    background-color: rgba(0, 0, 0, 0.442);
+                    border-radius: 10px;
+                    h2{
+                        font-size: 1rem;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10px;
+                        color: white;
+                    }
+                    
+                         
+                    
+                }
+                .sub-progress{
+                    background-color: rgba(183, 14, 14, 0.338);
+                    height: 5%;
+                    position: absolute;
+                    top: 0;
+                    border-radius: 10px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0; 
+                    transition: all;
+                    z-index: 10;
+                }
+                .progress{
+                    background-color: rgba(183, 14, 14, 0.338); 
+                    height: 3%;
+                    position: absolute;
+                    top: 0;
+                    border-radius: 10px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0; 
+                    transition: all;
+                    z-index: 10;
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:1025px){
+    .container-spotlight{
+        display: flex;
+        justify-content: space-evenly;
+
+        .skelton-spotlight{
+            width: 70%;
+            height: 600px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            background-color: #151515;
+        }
+    
+        .active-content{
+            width: 70%;
+            height: 600px;
+            border-radius: 10px;
+            position: relative;
+            .img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+            .overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                background: rgb(21,20,21);
+                background: linear-gradient(0deg, rgba(21,20,21,1) 10%, rgba(21, 20, 21, 0.24) 100%);
+    
+                border-radius: 8px;
+                h1{
+                    color: $white;
+                    position: absolute;
+                    bottom: 50px;
+                    left: 40px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .container-seklton-tab{
+            //width: 600px;
+            height: 600px;
+            .seklton-content{
+                width: 300px;
+                height: 33.33%;
+                .seklton-tab{
+                    width: 100%;
+                    height: 100%;
+                }      
+            }
+        }
+        .container-tab{
+            height: 600px;
+            .tab-content{
+                width: 300px;
+                height: 33.33%;
+                padding: 5px;
+                .content{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        .img{
+                            width: 100%;
+                            height: 80%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            };
+                        }
+                    }
+                    .overlay{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, 0.442);
+                        border-radius: 10px;
+    
+                        h2{
+                            font-size: 1rem;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                        }
+                    }
+                    .progress{
+                        //height: 100%;
+                        position: absolute;
+                        top: 0;
+                        border-radius: 10px;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .container-spotlight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .skelton-spotlight{
+            width: 100%;
+            height: 400px;
+        }
+    
+        .active-content{
+            width: 100%;
+            height: 400px;
+            background-color: gainsboro;
+            border-radius: 10px;
+            
+            .overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                background: rgb(21,20,21);
+                background: linear-gradient(0deg, rgba(21,20,21,1) 10%, rgba(21, 20, 21, 0.24) 100%);
+    
+                border-radius: 8px;
+                h1{
+                    color: $white;
+                    position: absolute;
+                    bottom: 50px;
+                    left: 40px;
+                    font-size: 1.6rem;
+                }
+            }
+           
+        }
+        .container-seklton-tab{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            .seklton-content{
+                width: 33.33%;
+                height: inherit;
+                .seklton-tab{
+                    width: 100%;
+                    height: 150px;
+                }      
+            }
+        }
+        .container-tab{
+            height: 200px;
+            display: flex;
+            .tab-content{
+                width: 33.33%;
+                height: inherit;
+                padding: 5px;
+                .content{
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 10px;
+                    .img{
+                        width: 100%;
+                        height: 80%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                  
+                    .overlay{
+                        width: 100%;
+                        height: 40%;
+                        position: relative;
+                        bottom: 0;
+                        background-color: inherit;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        h2{
+                            font-size: 0.8rem;
+                            position: relative;
+                            bottom: inherit;
+                            left: inherit;
+                            //background-color: blue;
+                        }
+                    }
+                    .progress{
+                        height: 5%; /* Ajuster la hauteur à 10% */
+                        border-radius:0px
+                    }
+                }
+               
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .container-spotlight{
+        .skelton-spotlight{
+            width: 100%;
+            height: 300px;
+        }
+        .active-content{
+            width: 100%;
+            height: 300px
+        }
+        .container-seklton-tab{
+         /*    width: 100%;
+            height: 120px;
+            display: flex; */
+            height: 120px;
+
+            .seklton-content{
+                width: 33.33%;
+                height: 120px;
+                padding:5px 2.5px 0px 2.5px;
+
+                .seklton-tab{
+                    width: 100%;
+                    height: 120px;
+                }      
+            }
+        }
+        .container-tab{
+            .tab-content{
+                width: 33.33%;
+                height: 120px;
+                padding:5px 2.5px 0px 2.5px;
+            }
+        }
+    }
+}
+@media screen and (max-width:451px) {
+    .spotlight{
+        height: auto !important ;      
+    }
+    .container-spotlight{
+        height: auto;
+        
+        .active-content{
+            width: 100%;
+            .overlay{
+                h1{
+                    font-size: 1rem;
+                    left:20px;
+                    bottom: 25px;
+                }
+            }
+        }
+        .container-seklton-tab{
+            
+               height: 120px;
+   
+               .seklton-content{
+                   width: 33.33%;
+                   height: 120px;
+                   padding:5px 2.5px 0px 2.5px;
+   
+                   .seklton-tab{
+                       width: 100%;
+                       height: 120px;
+                   }      
+               }
+           }
+        .container-tab{
+            height: auto;
+            .tab-content{    
+                height: 150px;
+                .content{          
+                    height: 150px;  
+                    .img{
+                        height: 60%;
+                    }                    
+                    .overlay{
+                        h2{
+                            font-size: 0.65rem;
+                        }
+                    }
+                }             
+            }
+        }
+    }
+}
+@media screen and (max-width:376px) {
+    .spotlight{
+        width: 95%;
+    }
+    .container-spotlight{
+        .skelton-spotlight{
+            width: 100%;
+            height: 220px;
+        }
+        .active-content{
+            width: 100%;
+            height: 220px
+        }
+        .container-seklton-tab{
+            
+            height: 120px;
+
+            .seklton-content{
+                width: 33.33%;
+                height: 120px;
+                padding:5px 2.5px 0px 2.5px;
+
+                .seklton-tab{
+                    width: 100%;
+                    height: 120px;
+                }      
+            }
+        }
+        .container-tab{
+            .tab-content{
+                width: 33.33%;
+                .content{ 
+                    height: 150px;  
+                    .img{
+                        height: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:321px) {
+    .container-spotlight{
+        .skelton-spotlight{
+            width: 100%;
+            height: 200px;
+        }
+        .active-content{
+            width: 100%;
+            height: 200px
+        }
+        .container-tab{
+            .container-seklton-tab{            
+                height: 90px;   
+                .seklton-content{
+                    height: 90px;
+                    .seklton-tab{
+                        height: 90px;
+                    }      
+                }
+            }
+            .tab-content{
+                height: 140px;
+                
+                .content{ 
+                    height: 120px;  
+                    border-radius: 7px;
+         
+                    .img{
+                        border-radius: 7px;
+                        height: 60%;
+                        img{
+                            border-radius: 7px;
+                        }
+                    }
+                    .overlay{
+                        border-radius: 7px;
+                        h2{
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+                .progress{ 
+                    border-radius: 7px;   
+                }
+            }
+        }
+    }
+}

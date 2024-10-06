@@ -1,0 +1,43 @@
+.container-other{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    //background-color: yellowgreen;
+    
+}
+
+.main-contents{
+    width: 70%;
+    //background-color: rebeccapurple;
+    margin: auto;
+   
+}
+
+aside{
+    width: 30%;
+    position: relative;
+   
+position: relative;
+    .aside{
+        height: auto;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .container-other{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width:769px){
+    .container-other{
+        width: 90%;
+        flex-direction: column;
+    }
+    .main-contents{
+        width: 100%;
+        
+    }
+}

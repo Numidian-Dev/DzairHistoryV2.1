@@ -1,0 +1,57 @@
+.pagination {
+  //background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-number {
+    color: $white;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .active-page {
+    color: $gold;
+  }
+  .previous-page,
+  .next-page {
+    cursor: pointer;
+    &:hover {
+      color: $gold;
+    }
+  }
+  .previous-page {
+    margin-right: 10px;
+  }
+  .next-page {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page-number {
+      color: $white;
+      padding: 5px;
+    }
+    .active-page {
+      color: $gold;
+    }
+    .previous-page,
+    .next-page {
+      cursor: pointer;
+      &:hover {
+        color: $gold;
+      }
+    }
+    .previous-page {
+      margin-right: 10px;
+    }
+    .next-page {
+      margin-left: 10px;
+    }
+  }
+}

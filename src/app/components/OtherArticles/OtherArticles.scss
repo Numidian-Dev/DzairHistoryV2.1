@@ -1,0 +1,551 @@
+.other-article-title{
+  width: 85%;
+  margin: auto;
+}
+.container-others {
+  display: flex;
+  width: 85%;
+  margin: auto;
+
+  .skelton-other-article-container {
+    display: flex;
+    width: 100%;
+    .card-other-skelton {
+      width: 25%;
+      height: auto;
+      padding: 4px;
+      .container-info-other-skelton {
+        height: 100px;
+        position: relative;
+        margin-top: 10px;
+      }
+
+      .label-skelton {
+        background-color: #151515;
+        width: 40%;
+        height: 25px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transform: translateX(-100%);
+          background-image: linear-gradient(
+            90deg,
+            rgba(#242424, 0) 0,
+            rgba(#242424, 0.2) 20%,
+            rgba(#242424, 0.5) 60%,
+            rgba(#242424, 0)
+          );
+          animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      }
+      .date-skelton {
+        background-color: #151515;
+        width: 100%;
+        height: 25px;
+        margin-top: 5px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transform: translateX(-100%);
+          background-image: linear-gradient(
+            90deg,
+            rgba(#242424, 0) 0,
+            rgba(#242424, 0.2) 20%,
+            rgba(#242424, 0.5) 60%,
+            rgba(#242424, 0)
+          );
+          animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      }
+      .other-skelton {
+        background-color: #151515;
+        border-radius: 5px;
+        height: 180px;
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transform: translateX(-100%);
+          background-image: linear-gradient(
+            90deg,
+            rgba(#242424, 0) 0,
+            rgba(#242424, 0.2) 20%,
+            rgba(#242424, 0.5) 60%,
+            rgba(#242424, 0)
+          );
+          animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      }
+    }
+  }
+  .card-other {
+    width: 25%;
+    height: auto;
+    padding: 4px;
+    color: white;
+    .container-info-other {
+      //background-color: blueviolet;
+      height: 100px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    h3 {
+      font-size: 0.8rem;
+      //margin: 10px 5px;
+      line-clamp: 3;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+
+      //background-color: red;
+    }
+    .label {
+      background-color: #151414;
+      width: 40%;
+      height: 25px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //margin: 10px 5px;
+      h5 {
+        font-size: 0.7rem;
+        color: #423d3d;
+      }
+    }
+    .date {
+      //background-color: yellowgreen;
+      width: 100%;
+      display: flex;
+      margin-left: 5px;
+      /*  position: absolute;
+            bottom: 0; */
+
+      h5 {
+        font-size: 0.7rem;
+        color: rgb(61, 61, 61);
+      }
+    }
+    .other {
+      //background-color: gainsboro;
+      border-radius: 5px;
+      //height: 180px;
+      aspect-ratio: 1/1;
+      .other-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-others {
+    flex-wrap: wrap;
+    .skelton-other-article-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .card-other-skelton {
+        width: 50%;
+        height: auto;
+        padding: 4px;
+        .container-info-other-skelton {
+          height: 100px;
+          margin-top: 10px;
+        }
+
+        .label-skelton {
+          background-color: #151515;
+          width: 40%;
+          height: 25px;
+        }
+        .date-skelton {
+          background-color: #151515;
+          width: 100%;
+          height: 25px;
+          margin-top: 5px;
+        }
+        .other-skelton {
+          background-color: #151515;
+          border-radius: 5px;
+          height: 180px;
+        }
+      }
+    }
+    .card-other {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .other-article-title{
+    width: 100%;
+    margin: auto;
+  }
+  .container-others {
+    flex-direction: column;
+    width: 100% !important;
+    margin: auto;
+    flex-wrap: wrap;
+    .skelton-other-article-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      .card-other-skelton {
+        width: 100%;
+        display: flex;
+        .container-info-other-skelton {
+          width: 50%;
+          margin-left: 5px;
+        }
+
+        .label-skelton {
+          width: 40%;
+          height: 25px;
+        }
+        .date-skelton {
+          width: 100%;
+          height: 25px;
+        }
+        .other-skelton {
+          height: 180px;
+          width: 50%;
+        }
+      }
+    }
+    .card-other {
+      .container-info-other {
+        //background-color: rgb(204, 168, 238);
+        height: 170px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        margin-top: 0px;
+        padding-left: 10px;
+        width: 50%;
+      }
+      width: 100%;
+      display: flex;
+      //background-color: rgb(0, 128, 107);
+      h3 {
+        //background-color: yellowgreen;
+        width: 100%;
+        height: 35px;
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+      .label {
+        background-color: #151414;
+        width: 40%;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        h5 {
+          font-size: 0.7rem;
+          color: #423d3d;
+        }
+      }
+      .date {
+        //background-color: yellowgreen;
+        width: 100%;
+        display: flex;
+        margin-left: 5px;
+        position: absolute;
+        bottom: 10px;
+
+        h5 {
+          font-size: 0.7rem;
+          color: rgb(61, 61, 61);
+        }
+      }
+      .other {
+        width: 50%;
+        height: 190px;
+
+        .other-img {
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+
+          img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 451px) {
+  .container-others {
+    flex-direction: column;
+    //background-color: blue;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    .skelton-other-article-container {
+      .card-other-skelton {
+        .container-info-other-skelton {
+          width: 50%;
+        }
+
+        .label-skelton {
+          width: 40%;
+          height: 25px;
+        }
+        .date-skelton {
+          width: 100%;
+          height: 25px;
+        }
+        .other-skelton {
+          height: 150px;
+          width: 50%;
+        }
+      }
+    }
+    .card-other {
+      .container-info-other {
+        //background-color: rgb(204, 168, 238);
+        height: 150px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        margin-top: 0px;
+        padding-left: 10px;
+        width: 50%;
+      }
+      width: 100%;
+      display: flex;
+      //background-color: rgb(0, 128, 107);
+      h3 {
+        //background-color: yellowgreen;
+        width: 100%;
+        height: 32px;
+        margin-top: 30px;
+        margin-left: 0px;
+      }
+      .label {
+        background-color: #151414;
+        width: 40%;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        h5 {
+          font-size: 0.7rem;
+        }
+      }
+      .date {
+        h5 {
+          font-size: 0.7rem;
+          color: rgb(61, 61, 61);
+        }
+      }
+      .other {
+        width: 50%;
+        height: 150px;
+
+        .other-img {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container-others {
+    .skelton-other-article-container {
+      .card-other-skelton {
+        .container-info-other-skelton {
+          width: 50%;
+          margin-top: 20px;
+        }
+
+        .other-skelton {
+          height: 120px;
+          width: 50%;
+        }
+      }
+    }
+    .card-other {
+      h3 {
+        font-size: 0.7rem;
+        width: 50%;
+        height: 25px;
+        margin-left: 10px;
+      }
+      .other {
+        width: 50%;
+        height: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .container-others {
+    flex-direction: column;
+    //background-color: blue;
+    width: 90%;
+    .skelton-other-article-container {
+      .card-other-skelton {
+        .container-info-other-skelton {
+          width: 50%;
+          margin-top: 20px;
+        }
+
+        .other-skelton {
+          height: 120px;
+          width: 50%;
+        }
+      }
+    }
+
+    .card-other {
+      .container-info-other {
+        //background-color: rgb(204, 168, 238);
+        height: 130px;
+
+        width: 50%;
+      }
+
+      h3 {
+        //background-color: yellowgreen;
+        width: 100%;
+        height: 28px;
+        margin-top: 20px;
+        margin-left: 0;
+      }
+      .label {
+        background-color: #151414;
+        width: 40%;
+        height: 25px;
+        border-radius: 5px;
+
+        h5 {
+          font-size: 0.7rem;
+        }
+      }
+      .date {
+        h5 {
+          font-size: 0.7rem;
+          color: rgb(61, 61, 61);
+        }
+      }
+      .other {
+        width: 50%;
+        height: 130px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .container-others {
+    flex-direction: column;
+    //background-color: blue;
+    width: 90%;
+
+    .card-other {
+      .container-info-other {
+        //background-color: rgb(204, 168, 238);
+        height: 110px;
+
+        width: 50%;
+      }
+
+      h3 {
+        //background-color: yellowgreen;
+        width: 100%;
+        height: 28px;
+        margin-top: 10px;
+        margin-left: 0;
+      }
+      .label {
+        background-color: #151414;
+        width: 40%;
+        height: 25px;
+        border-radius: 5px;
+
+        h5 {
+          font-size: 0.7rem;
+        }
+      }
+      .date {
+        h5 {
+          font-size: 0.7rem;
+          color: rgb(61, 61, 61);
+        }
+      }
+      .other {
+        width: 50%;
+        height: 110px;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.container-img-racim {
+    display: flex;
+    .img-racim {
+        width: 200px;
+        height: 240px;
+        margin: 5px;
+
+        .img {
+            width: 100%;
+            height: 230px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.crédit-img {
+    color: gray;
+    font-size: 12px;
+    font-family: $inter;
+    padding-bottom: 10px;
+}
+
+.fbi-img {
+    width: 100%;
+    height: 400px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.container-haik-ville {
+    display: flex;
+    justify-content: center;
+    .img-haik {
+        width: 320px;
+        height: 390px;
+        margin: 5px;
+
+        img {
+            width: 100%;
+            height: 85%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .container-img-racim {
+        display: flex;
+        .img-racim {
+            width: 200px;
+            height: 175px;
+            margin: 5px;
+
+            .crédit-img {
+                color: gray;
+                font-size: 9px;
+                font-family: $inter;
+            }
+
+            .img {
+                width: 100%;
+                height: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .crédit-img {
+        color: gray;
+        font-size: 10px !important;
+        font-family: $inter;
+        padding-bottom: 10px;
+        p {
+            color: gray;
+            font-size: 9px;
+            font-family: $inter;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container-img-racim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        .img-racim {
+            width: 200px;
+            height: 250px;
+            margin: inherit;
+
+            margin-bottom: 10px;
+            .crédit-img {
+                color: gray;
+                font-size: 9px;
+                font-family: $inter;
+                margin-left: 20px;
+            }
+
+            .img {
+                width: 100%;
+                height: 90%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .container-haik-ville {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+
+        .img-haik {
+            width: 320px;
+            height: 390px;
+            margin: 5px;
+
+            img {
+                width: 100%;
+                height: 85%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}

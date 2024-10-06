@@ -1,0 +1,129 @@
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+
+    nav {
+        background-color: darken($blackSecondary, 2);
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+        align-items: center;
+        height: 50px;
+        .logo {
+            margin-left: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin: 10px;
+            }
+        }
+        .icon-social {
+            margin-right: 50px;
+            a {
+                color: #cccccc;
+            }
+        }
+        .terms {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            a {
+                color: #cccccc;
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 5px;
+        background-color: darken($blackSecondary, 3);
+        color: #cccccc;
+        a {
+            color: #cccccc;
+            font-size: 0.7rem;
+            margin: 5px;
+        }
+    }
+    .admin {
+        background-color: darken($blackSecondary, 3);
+        width: 100%;
+
+        a {
+            color: #cccccc;
+            font-size: 0.7rem;
+            margin: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    footer {
+        margin-top: 20px;
+        nav {
+            background-color: darken($blackSecondary, 2);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            align-items: center;
+            height: auto;
+            .logo {
+                margin-left: 0px;
+                margin-top: 20px;
+                img {
+                    width: 50px;
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                font-size: 0.9rem;
+
+                li {
+                    list-style: none;
+                    margin: 10px;
+                }
+            }
+            .icon-social {
+                margin-right: 0px;
+                //margin-top: 50px;
+                flex-direction: row;
+                a {
+                    color: #cccccc;
+                }
+            }
+            .terms {
+                position: relative;
+                left: 0;
+                transform: translateX(0%);
+                margin: 20px 0px 20px 0px;
+                flex-direction: column;
+
+                li {
+                    margin: 5px;
+                }
+            }
+        }
+        .copyright {
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 7px;
+            background-color: darken($blackSecondary, 3);
+        }
+    }
+}
