@@ -26,7 +26,7 @@ const Header = () => {
       </div>
       <nav>
         <ul style={display}>
-          <div onClick={() => setDisplayState("false")} className="closeMenu">
+          <div onClick={() => setDisplayState("none")} className="closeMenu">
             <FaTimes />
           </div>
           <li className={pathName === "/" ? "active" : ""}>

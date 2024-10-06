@@ -40,11 +40,9 @@ const Books = () => {
              </div>
             </div>
             <div className="container-books">
-                {loading && <p>Chargement en cours...</p>}
-                {error && <p>Erreur lors du chargement des livres : {error.message}</p>}
-                {!loading && !error && books.length === 0 && <p>Aucun livre trouvé.</p>}
-                {books.slice(0,6).map((book, index) => (
-                    <div className="books-card" key={index}>
+                
+                {loading? "":books.slice(0,6).map((book, index) => (
+                    <Link href={`archives/livres/details/${book.id}`} className="books-card" key={index}>
                         <div className="book">
                             
                             <img src={book.volumeInfo.imageLinks.thumbnail} alt="" />
@@ -52,7 +50,7 @@ const Books = () => {
                             <div className="book-title">
                             {book.volumeInfo.title}
                             </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

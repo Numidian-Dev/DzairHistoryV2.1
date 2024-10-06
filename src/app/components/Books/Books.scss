@@ -39,6 +39,7 @@
         width: 16.7%;
         height: auto;
         padding:2.5px;
+        color: white;
 
         .book{
             background-color: gainsboro;
@@ -54,6 +55,7 @@
         .book-title{
             display: -webkit-box;
             -webkit-box-orient: vertical;
+            line-clamp: 3;
             -webkit-line-clamp: 3;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -103,15 +105,7 @@
         }
     }
 }
-@media screen and (max-width:600px){
-    .container-books{
-        .books-card{
-            .book{
-                //height: 190px;
-            }
-        }
-    }
-}
+
 @media screen and (max-width:451px){
     .container-title-books{ 
         .see-more{
@@ -122,9 +116,7 @@
     .container-books{
         .books-card{
             width: 33.33%;
-            .book{
-                //height: 170px;
-            }
+            
             .book-title{
                 margin-bottom: 10px;
             }
@@ -142,9 +134,7 @@
     .container-books{
         .books-card{
             width: 33.33%;
-            .book{
-                //height: 130px;
-            }
+            
             .book-title{
                 margin-bottom: 10px;
             }
@@ -163,9 +153,7 @@
     .container-books{
         .books-card{
             width: 33.33%;
-            .book{
-                //height: 110px;
-            }
+            
             .book-title{
                 font-size: 0.5rem;
                 margin-bottom: 10px;

@@ -94,34 +94,44 @@ header {
   position: relative;
   height: 100%;
   cursor: pointer;
+  @media (max-width:769px) {
+    height: auto;
+  }
 
   .dropdown-menu {
     position: absolute;
     width: 100%;
     display: none;
-
+    height: auto;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
     .li {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: auto;
-
+      @media (max-width:769px) {
+        background-color: burlywood;
+        width: auto;
+      }
     }
   }
 
   &:hover {
+    height: auto;
+   
     .dropdown-menu {
-      display: block;
+      display: flex;
+      position: relative;
+      margin-top: 10px;
+      margin: auto;
+      height: 0;
+      height: auto;
+     
     }
   }
-
-  /* 
-    &:hover{
-      .livres{
-        display: flex;
-      }
-    } */
 }
 
 @media screen and (max-width: 768px) {

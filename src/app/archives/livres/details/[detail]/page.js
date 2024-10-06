@@ -11,7 +11,6 @@ const Detail = async ({params})=>{
         },
       });
       const data = await res.data[0];
-    console.log(data)
     return (
         <section>
             <Header/>
