@@ -6,7 +6,7 @@ import url_api from '../config/URL';
 import Link from 'next/link';
 
 const Books = () => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {

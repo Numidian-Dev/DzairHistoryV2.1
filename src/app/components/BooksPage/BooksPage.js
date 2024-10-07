@@ -9,7 +9,7 @@ import Pagination from "../Categorie/Pagination/Pagination";
 const Books = () => {
   const [posts, setPosts] = useState();
   const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [totalPages, setTotalPages] = useState();
   useEffect(() => {
     const loadPost = async () => {
