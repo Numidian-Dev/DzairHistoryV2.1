@@ -75,14 +75,17 @@ app.get("/api/article/:categorie/page/:page", (req, res) => {
   });
 });
 
-app.get("/api/books/page/:page", (req, res) => {
+app.get("/api/books/page/:page", async (req, res) => {
+  const response = await axios.get(`https://www.googleapis.com/books/v1/users/118007517861050913153/bookshelves/1001/volumes?key=AIzaSyDQCaGgOkyX0W4euYoe4dl7eGJe-zfHzmw`)
+  const data = await response.data.items
+   
   const page = req.params.page
   const bookPerPage = 6
   const startIndex = (page - 1) * bookPerPage
   const endIndex = startIndex + bookPerPage
   
-  const totalPage = Math.ceil(books.length/bookPerPage)
-  const pagination = books.slice(startIndex,endIndex)
+  const totalPage = Math.ceil(data.length/bookPerPage)
+  const pagination = data.slice(startIndex,endIndex)
   
   res.json({
     totalPages:totalPage,
@@ -99,13 +102,18 @@ app.get("/api/books/page/:page", (req, res) => {
   res.json(posts);
 }); */
 
-app.get("/api/books", (req, res) => {
-  res.json(books);
+app.get("/api/books", async (req, res) => {
+const response = await axios.get(`https://www.googleapis.com/books/v1/users/118007517861050913153/bookshelves/1001/volumes?key=AIzaSyDQCaGgOkyX0W4euYoe4dl7eGJe-zfHzmw`)
+const data = await response.data.items
+  res.json(data);
 });
 
-app.get("/api/books/:id", (req, res) => {
+app.get("/api/books/:id", async (req, res) => {
+  const response = await axios.get(`https://www.googleapis.com/books/v1/users/118007517861050913153/bookshelves/1001/volumes?key=AIzaSyDQCaGgOkyX0W4euYoe4dl7eGJe-zfHzmw`)
+  const data = await response.data.items
+   
   const param = req.params.id
-  const book = books.filter(f=> f.id === param)
+  const book = data.filter(f=> f.id === param)
   res.json(book);
 });
 
@@ -120,10 +128,15 @@ app.get("/api/articles/search/:title", (req, res) => {
   res.json(result);
 });
 
-app.get("/api/books/search/:query", (req, res) => {
+app.get("/api/books/search/:query", async (req, res) => {
+
+  const response = await axios.get(`https://www.googleapis.com/books/v1/users/118007517861050913153/bookshelves/1001/volumes?key=AIzaSyDQCaGgOkyX0W4euYoe4dl7eGJe-zfHzmw`)
+  const data = await response.data.items
+   
+
   const query = _.deburr(req.params.query).toLowerCase();
 
-  const resultat = books.filter((book) => {
+  const resultat = data.filter((book) => {
     const title = _.deburr(book.volumeInfo.title)?.toLowerCase() ?? "";
     const author =
       typeof book.volumeInfo.authors === "string"

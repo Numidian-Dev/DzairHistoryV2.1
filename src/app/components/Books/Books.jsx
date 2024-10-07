@@ -6,26 +6,25 @@ import url_api from '../config/URL';
 import Link from 'next/link';
 
 const Books = () => {
-    const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        const loadPost = async () => {
-          setLoading(true);
-    
-          const response = await axios.get(`${url_api}/api/books`, {
-            method: "GET",
-            headers: {
-              Accept: "Application/json",
-            },
-          });
-    
-          setBooks(response.data);
-          setLoading(false);
-        };
-        loadPost();
-      }, []);
+      const loadPost = async () => {
+        setLoading(true);
+  
+        const response = await axios.get(`${url_api}/api/books`, {
+          method: "GET",
+          headers: {
+            Accept: "Application/json",
+          },
+        });
+  
+        setPosts(response.data);
+        setLoading(false);
+      };
+      loadPost();
+    }, []);
 
     
     return (
@@ -41,7 +40,7 @@ const Books = () => {
             </div>
             <div className="container-books">
                 
-                {loading? "":books.slice(0,6).map((book, index) => (
+                {loading? "":posts.slice(0,6).map((book, index) => (
                     <Link href={`archives/livres/details/${book.id}`} className="books-card" key={index}>
                         <div className="book">
                             

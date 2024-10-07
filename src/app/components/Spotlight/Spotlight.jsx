@@ -26,7 +26,6 @@ const Spotlight = () => {
             method: "GET",
             headers: {
               Accept: "Application/json",
-              "Access-Control-Allow-Origin": "*",
             },
           });
     
