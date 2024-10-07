@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Spotlight = () => {
     const [active, setActive] = useState(0);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [posts, setPosts] = useState([]);
     const [progress, setProgress] = useState(0);
     const [skeltonTab, setSelketonTab] = useState();
