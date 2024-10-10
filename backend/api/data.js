@@ -373,7 +373,7 @@ const data = [
       wilaya: "Alger",
       dynastie: "Pérode coloniale",
       epoque: 1920,
-      link: "cheikh_el_anka_une_icône_de_la_culture_populaire_algérienne.",
+      link: "cheikh_el_anka_une_icône_de_la_culture_populaire_algérienne",
       meta: "/img/meta/meta el anka.png",
       date: "14/09/2023",
       contributeur: "Kutami",

@@ -6,7 +6,7 @@ import TitleSection from "../titleSection/TitleSection";
 import url_api from "../config/URL";
 import logo from "@/app/styles/assets/img/logo/dzair.svg";
 const Instagram = () => {
-  const [posts, setPosts] = useState([]);
+/*   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPost, setCurrentPost] = useState();
   const [postState, setpostState] = useState(false);
@@ -25,7 +25,7 @@ const Instagram = () => {
     loadPost();
   }, []);
 
-  let nombreOfPosts = 8;
+  let nombreOfPosts = 8; */
   return (
     <section className="instagram">
       <div className="insta-title">
@@ -40,7 +40,9 @@ const Instagram = () => {
         </div>
       </div>
       <div className="container-instagram">
-        {loading
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div className="elfsight-app-77b0d399-cbeb-4d1c-a55b-21103654f689" data-elfsight-app-lazy></div>
+       {/*  {loading
           ? ""
           : posts.data.slice(0, nombreOfPosts).map((post) => {
               return (
@@ -57,7 +59,7 @@ const Instagram = () => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
         <div className="insta">
           <div className="insta-content">
             <Link href={"https://www.instagram.com/dzairhistory_/"}>
@@ -66,7 +68,7 @@ const Instagram = () => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         style={postState === true ? { display: "flex" } : { display: "none" }}
         className="post-content"
       >
@@ -86,7 +88,7 @@ const Instagram = () => {
           </div>
         </div>
         <div onClick={() => setpostState(!setPosts)} className="background" />
-      </div>
+      </div> */}
     </section>
   );
 };
