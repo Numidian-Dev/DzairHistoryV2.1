@@ -94,13 +94,13 @@ app.get("/api/books/page/:page", async (req, res) => {
     data:pagination,
   });
 });
-/* app.get("/api/instagram-posts", async (req, res) => {
-  const TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
-    await axios.get(` https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
+app.get("/api/instagram-posts", async (req, res) => {
+  const TOKEN = "IGQWRObFA3ZAUxoY0pXeTNrRml4TmNsUlF2YzdzLU9uT3hPcUhhTkxnSF9LT1BlRlNPVzM1ZAGluR25QYUZAGcUtCVUZAzdmdGQWFCUzNJNkVIWWdNUnJzSDJvaldWaFRsMXFzSE0xZAVRqWThGWUdGdmdJaTN0SlRBNjgZD";
+  const response =  await axios.get(`https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
   `);
   const posts = await response.data;
   res.json(posts);
-}); */
+}); 
 
 app.get("/api/books", async (req, res) => {
 const response = await axios.get(`https://www.googleapis.com/books/v1/users/118007517861050913153/bookshelves/1001/volumes?key=AIzaSyDQCaGgOkyX0W4euYoe4dl7eGJe-zfHzmw`)

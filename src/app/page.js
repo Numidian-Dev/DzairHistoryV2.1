@@ -6,7 +6,7 @@ import OtherArticles from "./components/OtherArticles/OtherArticles";
 import SideBar from "./components/SideBar/SideBar";
 import InteractiveMap from "./components/InteractiveMap/InteractiveMap";
 import Books from "./components/Books/Books";
-
+import Instagram from "./components/Instagram/Instagram";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="main-contents">
           <OtherArticles/>
           <Books/>
-         {/*  <Instagram/> */}
+         <Instagram/> 
         </div>
         <aside>
           <SideBar/>
