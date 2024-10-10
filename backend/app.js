@@ -98,8 +98,7 @@ app.get("/api/instagram-posts", async (req, res) => {
   const TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
 
   //const TOKEN = "IGQWRPenFXbmx0dFJ0OXQ1ZAkFxVTllTTZAVLUdGb2VQQVNtZADRYY0NLNnA5STVQRTd5ZAjBxbHotaEtESUpyR0k1YXE4QmxqeDRhRE5uTHJCOU1Ob3hvblp6QVl3aUF4UkQ3WGl5Yi1rRlJJSkVwUFhuUTRWamhqS2sZD";
-  const response =  await axios.get(`https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
-  `);
+  const response =  await axios.get(`https://graph.instagram.com/v17.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}`);
   const posts = await response.data;
   res.json(posts);
 }); 
