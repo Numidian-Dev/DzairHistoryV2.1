@@ -31,17 +31,16 @@ const Instagram = () => {
       <div className="insta-title">
         <TitleSection title={"Instagram"} backgroundColor={"#151414"} />
       </div>
-      <div className="container-follow-us">
+      {/* <div className="container-follow-us">
         <div className="img-profile">
           <img src={logo.src} alt="logo" />
         </div>
         <div className="follow-us">
           <Link href="https://www.instagram.com/dzairhistory_/">Suivre</Link>
         </div>
-      </div>
+      </div> */}
       <div className="container-instagram">
-      <script src="https://static.elfsight.com/platform/platform.js" async></script>
-      <div className="elfsight-app-77b0d399-cbeb-4d1c-a55b-21103654f689" data-elfsight-app-lazy></div>
+      
        {/*  {loading
           ? ""
           : posts.data.slice(0, nombreOfPosts).map((post) => {
@@ -59,14 +58,14 @@ const Instagram = () => {
                   </div>
                 </div>
               );
-            })} */}
+            })} 
         <div className="insta">
           <div className="insta-content">
             <Link href={"https://www.instagram.com/dzairhistory_/"}>
               <div className="see-more-insta">Voir plus...</div>
             </Link>
           </div>
-        </div>
+        </div>*/}
       </div>
       {/* <div
         style={postState === true ? { display: "flex" } : { display: "none" }}
