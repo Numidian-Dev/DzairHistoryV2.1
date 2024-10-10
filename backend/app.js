@@ -95,7 +95,7 @@ app.get("/api/books/page/:page", async (req, res) => {
   });
 });
 app.get("/api/instagram-posts", async (req, res) => {
-  const TOKEN = "IGQWRObFA3ZAUxoY0pXeTNrRml4TmNsUlF2YzdzLU9uT3hPcUhhTkxnSF9LT1BlRlNPVzM1ZAGluR25QYUZAGcUtCVUZAzdmdGQWFCUzNJNkVIWWdNUnJzSDJvaldWaFRsMXFzSE0xZAVRqWThGWUdGdmdJaTN0SlRBNjgZD";
+  const TOKEN = "IGQWRPenFXbmx0dFJ0OXQ1ZAkFxVTllTTZAVLUdGb2VQQVNtZADRYY0NLNnA5STVQRTd5ZAjBxbHotaEtESUpyR0k1YXE4QmxqeDRhRE5uTHJCOU1Ob3hvblp6QVl3aUF4UkQ3WGl5Yi1rRlJJSkVwUFhuUTRWamhqS2sZD";
   const response =  await axios.get(`https://graph.instagram.com/v20.0/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=${TOKEN}
   `);
   const posts = await response.data;
