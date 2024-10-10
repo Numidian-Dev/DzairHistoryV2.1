@@ -31,16 +31,16 @@ const Instagram = () => {
       <div className="insta-title">
         <TitleSection title={"Instagram"} backgroundColor={"#151414"} />
       </div>
-      {/* <div className="container-follow-us">
+       <div className="container-follow-us">
         <div className="img-profile">
           <img src={logo.src} alt="logo" />
         </div>
         <div className="follow-us">
           <Link href="https://www.instagram.com/dzairhistory_/">Suivre</Link>
         </div>
-      </div> */}
+      </div> 
       <div className="container-instagram">
-      
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8adcd38c7a9552d8a3c04a7c8a95d787.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width:"100%",border:0,overflow:"hidden"}}></iframe>
        {/*  {loading
           ? ""
           : posts.data.slice(0, nombreOfPosts).map((post) => {
@@ -67,7 +67,7 @@ const Instagram = () => {
           </div>
         </div>*/}
       </div>
-      {/* <div
+     {/*   <div
         style={postState === true ? { display: "flex" } : { display: "none" }}
         className="post-content"
       >
@@ -87,7 +87,7 @@ const Instagram = () => {
           </div>
         </div>
         <div onClick={() => setpostState(!setPosts)} className="background" />
-      </div> */}
+      </div>  */}
     </section>
   );
 };

@@ -12,7 +12,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     const post = await res.data 
     console.log(post && post.desc);
     const desc = post.desc;
-    const metaImg = `https://numidian.dev${post.img}`;
+    const metaImg = `https://dzairhistory.com${post.meta}`;
     return {
       title: post.title,
       description: desc,
