@@ -16,7 +16,7 @@ const data = [
       date: "05/01/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const data = [
       date: "06/01/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ const data = [
       date: "10/02/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ const data = [
       date: "12/04/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 5,
@@ -93,7 +93,7 @@ const data = [
       meta: "/img/meta/bijoux-kabyle.jpg",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 6,
@@ -112,7 +112,7 @@ const data = [
       date: "12/07/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 7,
@@ -132,7 +132,7 @@ const data = [
       date: "12/09/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 8,
@@ -151,7 +151,7 @@ const data = [
       date: "14/11/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 9,
@@ -170,7 +170,7 @@ const data = [
       date: "19/11/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 10,
@@ -189,7 +189,7 @@ const data = [
       date: "22/11/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 11,
@@ -210,7 +210,7 @@ const data = [
       date: "20/12/2022",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 12,
@@ -230,7 +230,7 @@ const data = [
       date: "03/01/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 13,
@@ -250,7 +250,7 @@ const data = [
       date: "15/01/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 14,
@@ -270,7 +270,7 @@ const data = [
       date: "14/03/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 15,
@@ -292,7 +292,7 @@ const data = [
       date: "15/03/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 16,
@@ -314,7 +314,7 @@ const data = [
       date: "16/03/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 17,
@@ -335,7 +335,7 @@ const data = [
       date: "16/03/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
   
     {
@@ -344,7 +344,7 @@ const data = [
       body: "<p class='firstP'>Militaire au sein de l’armée française puis homme politique puis militant défenseur des droits des Algériens au sein du mouvement des « jeunes Algériens », pour certain assimilationniste et pour d’autre nationaliste algériens, pour certain, il est même le pionnier du nationalisme algérien dans les années 20. </p> <p>L'Émir Khaled el-Hassani ben el-Hachemi est un personnage au mille et une contradictions, mais il a malgré tout joué un rôle dans la lutte pour les droits des Algériens sous le régime colonial français.</p> <h2> Qui est Khaled el-Hassani ben el-Hachemi ?</h2> <p>Khaled el-Hassani ben el-Hachemi, aussi appeler l’émir Khaled est le petit-fils de l’émir Abdelkader, il est né le 20 février 1875 à damas ou il passe toute son enfance, ce n’est qu’en 1892 qu’il déménage en Algérie avec son père El-Hachemi, il sera par la suite envoyé à paris ou il sera scolarisé dans le lycée Louis-le-Grand avant d’être admis a l'école militaire de Saint-Cyr ou il la quittera avant son achèvement, car il est rappelé par son malade. </p> <p>Après son retour en Algérie, il sera assigné à résidence à Bou-Saada avec toute sa famille.  En 1896, il sera réadmis à l'école militaire de Saint-Cyr et termine par la même occasion sa scolarisation. Après cela, il rejoint l’armée française ou il devient officier au titre d’indigène. </p> <h2>Les revendications de l'Émir Khaled </h2> <p>L'Émir Khaled a revendiqué plusieurs droits pour les Algériens, notamment la représentation égale des Algériens et des colons au Parlement, la suppression des lois et mesures d'exception, l'accession des Algériens à tous les grades civils et militaires, et la liberté de presse et d'association. Ces demandes étaient considérées comme une menace pour le régime colonial français.</p> <p>En raison de ses revendications, l'Émir Khaled a été expulsé d'Algérie et contraint de s'exiler en Égypte. Malgré cet exil, il a continué son combat pour les droits algériens, notamment à Paris où il a donné des conférences et écrit des articles dans l'Humanité. En 1926, il retourne définitivement en Syrie, où il meurt en 1936. <p class='read-to'><span class='title-read-to'>Lire aussi :</span><a href='articles/Abdelkader-El-Djezairi-heros-de-la-lutte-pour-l-independance-de-l-Algerie-contre-la-France-coloniale'> Abdelkader El-Djezairi : Le héros de la lutte pour l'indépendance de l'Algérie contre la France coloniale </a></p> <h2>L'héritage de l'Émir Khaled </h2> <p>L'Émir Khaled a laissé derrière lui un héritage important en tant que défenseur des droits des Algériens. Son combat pour les droits fondamentaux des Algériens est vu par certains comme la naissance du nationalisme algérien. En 1926, il a été nommé président d'honneur du parti l'Étoile Nord-Africaine (ENA), un mouvement politique fondé par des nationalistes algériens en France et dirigé par Messali Hadj, visant à obtenir l'indépendance de l'Algérie vis-à-vis de la colonisation française.</p> <p>L'Émir Khaled el-Hassani ben el-Hachemi est un personnage fascinant de l'histoire de l'Algérie et de la lutte pour les droits des Algériens, son engagement pour les droits des Algériens a contribué à faire avancer la cause de l'indépendance en Algérie.</p>",
       resumer:
         "Militaire au sein de l’armée française puis homme politique puis militant défenseur des droits des Algériens au sein du mouvement des «jeunes Algériens», pour certain assimilationniste et pour d’autre nationaliste algériens, pour certain, il est même le pionnier du nationalisme algérien dans les années 20. L'Émir Khaled el-Hassani ben el-Hachemi est un personnage au mille et une contradictions, mais il a malgré tout  joué un rôle crucial dans la lutte pour les droits des Algériens sous le régime colonial français.",
-      img: "/article/Alger/émir-Khaled.png",
+      img: "/article/Alger/emir-Khaled.png",
       imgLastPost: "/article/last post/alger/emir-khaled.png",
       credit: "",
       alt: "émir Khaled",
@@ -353,11 +353,11 @@ const data = [
       dynastie: "Pérode coloniale",
       epoque: 1920,
       link: "L_emir_Khaled_Un_pionnier_du_nationalisme_algerien",
-      meta: "/img/meta/meta-émir-Khaled.png",
+      meta: "/img/meta/Alger/meta-emir-Khaled.png",
       date: "30/03/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 19,
@@ -378,7 +378,7 @@ const data = [
       date: "14/09/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     {
       id: 20,
@@ -399,7 +399,7 @@ const data = [
       date: "14/09/2023",
       contributeur: "Kutami",
       img_profil: "",
-      local: "fr",
+      lang: "fr",
     },
     
   ];

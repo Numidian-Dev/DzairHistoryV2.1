@@ -5,6 +5,7 @@ import axios from "axios";
 import TitleSection from "../titleSection/TitleSection";
 import url_api from "../config/URL";
 import logo from "@/app/styles/assets/img/logo/dzair.svg";
+import Script from "next/script";
 const Instagram = () => {
 /*   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -40,7 +41,7 @@ const Instagram = () => {
         </div>
       </div> 
       <div className="container-instagram">
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8adcd38c7a9552d8a3c04a7c8a95d787.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width:"100%",border:0,overflow:"hidden"}}></iframe>
+    <Script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></Script><iframe src="//lightwidget.com/widgets/8adcd38c7a9552d8a3c04a7c8a95d787.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width:"100%",border:0,overflow:"hidden"}}></iframe>
        {/*  {loading
           ? ""
           : posts.data.slice(0, nombreOfPosts).map((post) => {

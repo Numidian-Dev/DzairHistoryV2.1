@@ -24,7 +24,7 @@ const OtherArticles = () => {
     };
     loadPost();
   }, []);
-
+const skelton = [1,2,3,4]
   return (
     <section className="otherArticle">
       <div className="other-article-title">
@@ -33,7 +33,7 @@ const OtherArticles = () => {
       <div className="container-others">
         {loading ? (
           <div className="skelton-other-article-container">
-            <div className="card-other-skelton">
+         {/*    <div className="card-other-skelton">
               <div className="other-skelton">
                 <div className="other-img" />
               </div>
@@ -63,6 +63,16 @@ const OtherArticles = () => {
                 <div className="date-skelton" />
               </div>
             </div>
+            <div className="card-other-skelton">
+              <div className="other-skelton">
+                <div className="other-img" />
+              </div>
+              <div className="container-info-other-skelton">
+                <div className="label-skelton" />
+                <div className="date-skelton" />
+                <div className="date-skelton" />
+              </div>
+            </div> */}
             <div className="card-other-skelton">
               <div className="other-skelton">
                 <div className="other-img" />
