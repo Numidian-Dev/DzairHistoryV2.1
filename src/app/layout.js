@@ -1,7 +1,7 @@
 
 import { Inter } from "next/font/google";
 import "./globals.scss";
-
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 
 
@@ -13,13 +13,17 @@ const inter = Inter({ subsets: ["latin"] });
   openGraph: {
     images: ["https://dzairhistory.com/img/meta/acceuil_meta_og.png"],
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
 }; 
 
 export default function RootLayout({ children }) {
   
   return (
-    <html lang="en">
-      
+    <html lang="fr">
+      <GoogleAnalytics gaId="G-7MKNM1FX1N" />
+      <GoogleTagManager gtmId="GTM-K8M53XZ" />
       <body className={inter.className}>{children}</body>
     </html>
   );
