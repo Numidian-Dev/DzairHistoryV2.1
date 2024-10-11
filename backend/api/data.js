@@ -310,7 +310,7 @@ const data = [
       dynastie: "Pérode coloniale",
       epoque: 1830,
       link: "Abdelkader-El-Djezairi-heros-de-la-lutte-pour-l-independance-de-l-Algerie-contre-la-France-coloniale",
-      meta: "/img/meta/emir.png",
+      meta: "/img/meta/mascara/emir.png",
       date: "16/03/2023",
       contributeur: "Kutami",
       img_profil: "",
