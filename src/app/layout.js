@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import CookieConsent from "./components/CookiesConsent/CookiesConsent";
 
 
 
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <GoogleAnalytics gaId="G-7MKNM1FX1N" />
       <GoogleTagManager gtmId="GTM-K8M53XZ" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+       <CookieConsent/>
+        {children}
+        </body>
     </html>
   );
 }
