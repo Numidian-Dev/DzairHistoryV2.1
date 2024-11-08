@@ -74,7 +74,7 @@
         margin: 0 auto;
         padding: 20px;
         display: block;
-
+        position: relative;
         h2 {
             color: $gold;
             margin: 20px 0px 20px 0px;
@@ -179,9 +179,9 @@
     height: 1px;
 }
 .src {
-    color: grey;
+    color: rgb(80, 80, 80);
     padding-top: 10px;
-
+    line-height: normal !important;
     font-size: 0.9rem !important;
 }
 
@@ -213,6 +213,11 @@
             color: $gold;
         }
     }
+}
+
+.src-img{
+    color: rgb(80, 80, 80);
+    font-size: 0.8rem !important;
 }
 @media screen and (max-width: 1024px) {
     .share-icon {
