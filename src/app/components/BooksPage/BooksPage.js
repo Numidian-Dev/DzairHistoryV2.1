@@ -6,6 +6,7 @@ import { ImBubble2 } from "react-icons/im";
 import { useRouter } from "next/navigation";
 import url_api from "../config/URL";
 import Pagination from "../Categorie/Pagination/Pagination";
+import Link from "next/link";
 const Books = () => {
   const [posts, setPosts] = useState();
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,9 +59,12 @@ const Books = () => {
                     <h3>{book.volumeInfo.title}</h3>
                   </div>
                   <h4 className="author">{book.volumeInfo.authors}</h4>
+                    <Link href={`livres/details/${book.id}`}>
                   <button className="read">
-                    <a href={`livres/details/${book.id}`}>Lire</a>
+                    Lire
+                    
                   </button>
+                    </Link>
                 </div>
               </div>
             );

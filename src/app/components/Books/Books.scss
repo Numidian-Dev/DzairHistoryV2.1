@@ -41,6 +41,10 @@
         padding:2.5px;
         color: white;
 
+        .svg{
+            width: 100%;
+        }
+
         .book{
             background-color: gainsboro;
             height: 170px;
@@ -75,9 +79,10 @@
     }
     .container-books{
         flex-wrap: wrap;
+
         .books-card{
             width: 25%;
-
+           
             .book{
                 height: 210px;
             }
@@ -96,7 +101,7 @@
     .container-books{
         width: 100%;
         .books-card{
-            width: 33.33%;
+            /* width: 33.33%; */
             .book{
                 
                 height: inherit;

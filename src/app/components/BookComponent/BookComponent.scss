@@ -1,0 +1,34 @@
+.svg-book-container{
+    position: relative;
+}
+.svg-book-title{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    width: 80%;
+    @media screen and (max-width:769px){
+        left: 25px;
+    }
+    @media screen and (max-width:600px){
+        left: 18px;
+    }
+    @media screen and (max-width:320px){
+        left: 12px;
+    }
+    p{
+        font-size: 0.8rem;
+        color: black;
+        font-weight: 500;
+        font-family: $inter;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        @media screen and (max-width:320px){
+            font-size: 0.5rem;
+        }
+    }
+}
