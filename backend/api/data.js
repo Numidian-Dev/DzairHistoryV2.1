@@ -422,6 +422,27 @@ const data = [
       img_profil: "",
       lang: "fr",
     },
+    {
+      id: 22,
+      title: "Barberousse et l'Entente entre l'Assemblée d'Alger et l'Empire Ottoman",
+      body: "<p class='firstP'>Après une série de victoires majeures contre les Espagnols, notamment à Jijel, Béjaïa, Alger et Tlemcen, grâce à l'aide précieuse des Algériens, khayr ad-Din Aroudj, dit « Barberousse », désirant retourner dans son pays,  décide de réunir les oulémas et les notables en assemblée et les informe de sa décision.</p> <p>Malgré la demande insistante de l'assemblée pour qu'il renonce à son départ, Barberousse demeure résolu à partir. Il annonce sa décision de placer le royaume d’Alger sous la protection de la sublime porte. Il assure à l'assemblée que le sultan revendiquera comme droit de suzeraineté, que de faire frapper la monnaie à son effigie et de « voir son nom devenir l’objet de vénération des fidèles dans leurs prières publique et notamment dans l’invocation solennelle de la Khotba ».</p> <div class='zohrat-first'> <img src='/article/Alger/zohrat/1.jpeg'> </div> <p class='src-img src-zo'> Extrait du livre Traduction du manuscrit arabe El Zohrat  El Nayerat de Muhammad Ibn Muhammad Al-Tilimsani</p> <p class='read-to'><span class='title-read-to'>Lire aussi: </span> <a href='/article/Un-épisode-du-règne-de-Baba-Hassan-Pacha-et%20Hadj-Hussein-Mezzo-Morto'> Un épisode du règne de Baba-Hassan Pacha et Hadj Hussein Mezzo Morto</a></p> <p>L'assemblée, représentant de la population algérienne, finit par accepter la proposition de  khayr ad-Din Barberousse. Un ambassadeur algérien, du nom de Hadj-Hussein, est chargé de présenter cette proposition au sultan de la sublime porte. Cet émissaire est porteur d'une lettre exposant en détail le projet élaboré lors de cette assemblée. </p> <div class='container-img-source-zohrate'> <div class='zohrat'> <img src='/article/Alger/zohrat/2.jpeg'> </div> <div class='zohrat'> <img src='/article/Alger/zohrat/3.jpeg'> </div> </div> <p class='src-img'> Extrait du livre Traduction du manuscrit arabe El Zohrat  El Nayerat de Muhammad Ibn Muhammad Al-Tilimsani</p> <div class='hr-source'> </div> <p class='src'>Source: Source :  Traduction du manuscrit arabe El Zohrat El Nayerat de Muhammad Ibn Muhammad Al-Tilimsani </p> <style> .src-zo{ width:80%; margin:auto;} .container-img-source-zohrate{ display:flex; align-items:center; justify-content:center; } .zohrat-first { width: 80%; margin:auto; } .zohrat { padding:5px; width: 100%; } .zohrat img, .zohrat-first img { width: 100%; height: 100%; object-fit: cover; } @media screen and (max-width: 681px) { .zohrat-first { width: 90%; margin : auto; margin-top:10px } .container-img-source-zohrate { width: 90%; margin: auto; display: flex; align-items: center; justify-content: center; flex-direction: column; } } </style>",
+      resumer:
+        "Après une série de victoires majeures contre les Espagnols, notamment à Jijel, Béjaïa, Alger et Tlemcen, grâce à l'aide précieuse des Algériens, khayr ad-Din Aroudj, surnommé « Barberousse », désirant retourner dans son pays,  décide de réunir les oulémas et les notables en assemblée et les informe de sa décision. Malgré la demande insistante de l'assemblée pour qu'il renonce à son départ, Barberousse demeure résolu à partir.",
+      img: "/article/Alger/barberousse.png",
+      imgLastPost: "/article/Constantine/cirta.png",
+      credit: "",
+      alt: "Cirta",
+      categorie: "Histoire",
+      wilaya: "Alger",
+      dynastie: "Royaume d'Alger",
+      epoque: 1516,
+      link: "barberousse-et-l-entente-entre-l-assemblée-d-alger et-l-empire-ottoman",
+      meta: "/img/meta/Alger/meta-b.png",
+      date: "12/11/2024",
+      contributeur: "Kutami",
+      img_profil: "",
+      lang: "fr",
+    },
   ];
   
   module.exports = data;
