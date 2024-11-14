@@ -32,7 +32,16 @@ const Categorie = ({ params }) => {
     };
     loadPost();
   }, [params.categorie, currentPage]);
-
+  const formtedTitle = (str) => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ /g, "-")
+      .replace(/:/g, "-")
+      .replace(/'/g, "-")
+      .replace(/---/g, "-")
+      .toLowerCase();
+  };
   return (
     <section className="main-categorie">
       <div className="container-categorie">
@@ -42,7 +51,7 @@ const Categorie = ({ params }) => {
             posts.length > 0 &&
             posts &&
             posts.map((post) => (
-              <Link key={post.id} href={`/article/${post.link}`} className="post-card">
+              <Link key={post.id} href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) } className="post-card">
                 <div className="post-img">
                   <img src={post.meta} alt={post.title} />
                 </div>

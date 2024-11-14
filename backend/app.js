@@ -8,7 +8,9 @@ const _ = require("lodash");
 const legals = require("./api/legals");
 
 const app = express();
-
+const removeAccents = (str) => {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+};
 app.use(cors());
 app.use(express.json());
 
@@ -16,19 +18,39 @@ app.get("/api/articles", (req, res) => {
   res.json(articles);
 });
 app.get("/api/articles/:link", (req, res) => {
-  const link = req.params.link;
-  const article = articles.find((article) => article.link === link);
+  /* const link = removeAccents(req.params.link.toLowerCase());
+  console.log("Normalized link from URL:", link); */
+  const link = req.params.link
+  const link2 = removeAccents(req.params.link.toLowerCase());
+  const article = articles.find((article) => {
+    const formattedTitle = removeAccents(
+      article.title
+        .replace(/ /g, "-")
+        .replace(/:/g, "-")
+        .replace(/'/g, "-")
+        .replace(/---/g, "-")
+        .toLowerCase()
+    );
+    console.log("Checking article:", {
+      linkInArticle: article.link ? article.link.toLowerCase() : "No link",
+      formattedTitle,
+    });
+
+    return (article.link ? article.link : formattedTitle) === (article.link ? link : link2);
+  });
+
   if (article) {
+    console.log("Article found:", article);
     res.json(article);
   } else {
+    console.log("Article not found for link:", link);
     res.status(404).json({ error: "Article not found" });
   }
 });
 
+
 app.get("/api/categorie/:categorie", (req, res) => {
-  const removeAccents = (str) => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  };
+ 
 
   const categorieParams = removeAccents(req.params.categorie.toLowerCase());
 

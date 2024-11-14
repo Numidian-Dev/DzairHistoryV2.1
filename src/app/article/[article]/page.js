@@ -23,6 +23,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   }
 
 const Page = async ({params})=>{
+  
     const res= await axios.get(`${url_api}/api/articles/${params.article}`)
     const data = await res.data 
     

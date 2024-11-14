@@ -61,6 +61,13 @@ const Search = () => {
   }, [posts]);
   console.log(posts);
   
+  const formtedTitle = (str)=>{
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-")
+    .replace(/:/g, "-")
+    .replace(/'/g, "-")
+    .replace(/---/g, "-")
+    .toLowerCase()
+}
 
   return (
     <>
@@ -105,7 +112,7 @@ const Search = () => {
                           <a
                             href={
                               post.body
-                                ? `/article/${post.link}`
+                                ? (  post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) )
                                 : `archives/livres/details/${post.id}`
                             }
                           >

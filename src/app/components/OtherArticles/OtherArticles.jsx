@@ -25,6 +25,16 @@ const OtherArticles = () => {
     loadPost();
   }, []);
 const skelton = [1,2,3,4]
+const formtedTitle = (str) => {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ /g, "-")
+    .replace(/:/g, "-")
+    .replace(/'/g, "-")
+    .replace(/---/g, "-")
+    .toLowerCase();
+};
   return (
     <section className="otherArticle">
       <div className="other-article-title">
@@ -90,7 +100,7 @@ const skelton = [1,2,3,4]
             .sort(() => 0.5 - Math.random())
             .slice(0, 4)
             .map((post) => (
-              <Link key={post.id} href={`/article/${post.link}`} className="card-other">
+              <Link key={post.id} href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) } className="card-other">
                 <div className="other">
                   <div className="other-img">
                     <img src={post.img} alt="img" />

@@ -41,7 +41,16 @@ const Page = async ({ params }) => {
   });
   const data = await res.data;
   const posts = [...Object.values(data.articles)];
-
+  const formtedTitle = (str) => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ /g, "-")
+      .replace(/:/g, "-")
+      .replace(/'/g, "-")
+      .replace(/---/g, "-")
+      .toLowerCase();
+  };
   return (
     <section>
       <Header />
@@ -54,7 +63,7 @@ const Page = async ({ params }) => {
       <div className="container-cards-16-9">
         {posts
           .sort((a, b) => b.id - a.id).slice(0, 4).map((post) => (
-            <Link key={post.id} href={`/article/${post.link}`} className="content-card-16-9">
+            <Link key={post.id} href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) } className="content-card-16-9">
               <div className="img-card-16-9">
                 <img src={post.meta} alt={post.title} />
               </div>

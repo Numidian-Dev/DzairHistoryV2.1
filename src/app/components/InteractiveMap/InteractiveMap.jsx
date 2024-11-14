@@ -48,6 +48,14 @@ const InteractiveMap = (props) => {
       return "Aucun contenu pour l'instant...";
     }
   };
+
+  const formtedTitle = (str)=>{
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-")
+    .replace(/:/g, "-")
+    .replace(/'/g, "-")
+    .replace(/---/g, "-")
+    .toLowerCase()
+}
   return (
     <section className="interactiveMap">
     <div className="title-map">
@@ -698,7 +706,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -739,7 +747,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -782,7 +790,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -826,7 +834,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -870,7 +878,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -916,7 +924,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -962,7 +970,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1008,7 +1016,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1052,7 +1060,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1098,7 +1106,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1144,7 +1152,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1187,7 +1195,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1233,7 +1241,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1276,7 +1284,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1322,7 +1330,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1366,7 +1374,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1409,7 +1417,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1450,7 +1458,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1494,7 +1502,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1535,7 +1543,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1581,7 +1589,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1624,7 +1632,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1670,7 +1678,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1713,7 +1721,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1759,7 +1767,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1800,7 +1808,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1843,7 +1851,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1886,7 +1894,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1929,7 +1937,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -1972,7 +1980,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2016,7 +2024,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2059,7 +2067,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2105,7 +2113,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2148,7 +2156,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2191,7 +2199,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2234,7 +2242,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2277,7 +2285,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2320,7 +2328,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2363,7 +2371,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2406,7 +2414,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2449,7 +2457,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2495,7 +2503,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2536,7 +2544,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2579,7 +2587,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2620,7 +2628,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2663,7 +2671,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2707,7 +2715,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2753,7 +2761,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2796,7 +2804,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2839,7 +2847,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2882,7 +2890,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2925,7 +2933,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -2968,7 +2976,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -3011,7 +3019,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -3054,7 +3062,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -3100,7 +3108,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -3143,7 +3151,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
@@ -3186,7 +3194,7 @@ const InteractiveMap = (props) => {
                                 layout="fill"
                                 alt={post.alt}
                               />
-                              <Link href={`/article/${post.link}`}>
+                              <Link href={ post.link ?`/article/${post.link}`: formtedTitle(`/article/${post.title}`) }>
                                 <div className="overlay">
                                   <div className="label">
                                     <h6>{post.categorie}</h6>
