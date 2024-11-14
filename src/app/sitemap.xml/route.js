@@ -7,6 +7,17 @@ function generateSiteMap(articles, books) {
   // Débogage
   console.log("Articles:", articles);
   console.log("Books:", books);
+
+  const formtedTitle = (str) => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ /g, "-")
+      .replace(/:/g, "-")
+      .replace(/'/g, "-")
+      .replace(/---/g, "-")
+      .toLowerCase();
+  };
   
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -33,15 +44,16 @@ function generateSiteMap(articles, books) {
      </url>
      
      <!-- Articles URLs -->
-          ${articles
-       .map(({ link }) => {
-         return `
-       <url>
-           <loc>${`${BASE_URL}/article/${link}`}</loc>
-       </url>
-     `;
-       })
-       .join('')}
+     ${articles
+      .map(({ link, title }) => {
+        const urlPath = link ? link : formtedTitle(title); // Utilise link si disponible, sinon formate le title
+        return `
+          <url>
+              <loc>${`${BASE_URL}/article/${urlPath}`}</loc>
+          </url>
+        `;
+      })
+      .join('')}
      
      <!-- Books URLs -->
      ${Array.isArray(books) ? books.map((book) => {
