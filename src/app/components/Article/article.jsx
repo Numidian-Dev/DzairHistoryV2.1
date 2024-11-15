@@ -20,30 +20,7 @@ const Article = ({ data }) => {
       {<h1 className="title-article">{data.title}</h1>}
       <hr className="title-hr" />
       <article>
-        {data.img != undefined ? (
-            <>
-             <div className="share-icon">
-             <FacebookShareButton
-               title={data.Title}
-               url={`https://dzairhistory.com/articles/${data.link}`}
-               hashtag={"#AlgerianHeritage"}
-               className="fb"
-             >
-               <FacebookIcon size={32} round />
-             </FacebookShareButton>
-             <TwitterShareButton
-               title={data.title}
-               url={`https://dzairhistory.com/articles/${data.link}`}
-               hashtag={"#AlgerianHeritage"}
-             >
-               <TwitterIcon size={32} round />
-             </TwitterShareButton>
-           </div>
-            <div className="img-article">
-            {<img src={`${data.img}`} alt={data.alt} />}
-          </div>
-          </> 
-        ):null}
+        
      
            
             
