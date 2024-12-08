@@ -7,7 +7,7 @@ import url_api from "../config/URL";
 import logo from "@/app/styles/assets/img/logo/dzair.svg";
 import Script from "next/script";
 const Instagram = () => {
-/*   const [posts, setPosts] = useState([]);
+const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPost, setCurrentPost] = useState();
   const [postState, setpostState] = useState(false);
@@ -26,7 +26,7 @@ const Instagram = () => {
     loadPost();
   }, []);
 
-  let nombreOfPosts = 8; */
+  let nombreOfPosts = 8; 
   return (
     <section className="instagram">
       <div className="insta-title">
@@ -41,8 +41,8 @@ const Instagram = () => {
         </div>
       </div> 
       <div className="container-instagram">
-    <Script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></Script><iframe src="//lightwidget.com/widgets/8adcd38c7a9552d8a3c04a7c8a95d787.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width:"100%",border:0,overflow:"hidden"}}></iframe>
-       {/*  {loading
+   {/*  <Script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></Script><iframe src="//lightwidget.com/widgets/8adcd38c7a9552d8a3c04a7c8a95d787.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width:"100%",border:0,overflow:"hidden"}}></iframe> */}
+        {loading
           ? ""
           : posts.data.slice(0, nombreOfPosts).map((post) => {
               return (
@@ -66,9 +66,9 @@ const Instagram = () => {
               <div className="see-more-insta">Voir plus...</div>
             </Link>
           </div>
-        </div>*/}
+        </div>
       </div>
-     {/*   <div
+        <div
         style={postState === true ? { display: "flex" } : { display: "none" }}
         className="post-content"
       >
@@ -88,7 +88,7 @@ const Instagram = () => {
           </div>
         </div>
         <div onClick={() => setpostState(!setPosts)} className="background" />
-      </div>  */}
+      </div>  
     </section>
   );
 };
