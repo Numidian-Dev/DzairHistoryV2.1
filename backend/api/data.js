@@ -472,6 +472,7 @@ const data = [
         "On entend souvent que le mot « Algérie » est une création française et que ce mot n’existait pas avant la colonisation, prenant comme argument que l’actuel Algérie était appelée Alger ou régence d’Alger avant la colonisation, mais qu’on est il vraiment ? Le terme « Algérie » ne résulte pas d'une invention française, contrairement à ce que prétendent certaines personnes de manière erronée. Il s'agit plutôt d'une déformation de « Al-Jazā'ir » (الجزائر), qui trouve son origine dans le nom de la ville d'Alger, fondée en 960 par Bologhine ibn Ziri sous le nom de « Djezaïr Beni Mezghenna », avant de devenir uniquement « Al-Jazā'ir ». ",
        img: "/article/Alger/dzname/casbah.jpg",
       imgLastPost: "/article/Alger/dzname/casbah.jpg",
+      link:"d-ou-vient-le-mot-algerie",
       credit: "",
       alt: "casbah",
       categorie: "Histoire",
