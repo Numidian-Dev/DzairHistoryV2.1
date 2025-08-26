@@ -59,7 +59,7 @@ load()
 
     {data.map(post=>{
         return(
-            <div className="cards-president">
+            <div key={post.id} className="cards-president">
       <div className="card-p">
         <div className="img-p">
         <img src={post.img} alt={post.name}/>

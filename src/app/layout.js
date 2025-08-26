@@ -3,7 +3,6 @@ import "./globals.scss";
 import {
   GoogleAnalytics,
   GoogleTagManager,
-  Goo,
 } from "@next/third-parties/google";
 import CookieConsent from "./components/CookiesConsent/CookiesConsent";
 import Script from "next/script";
@@ -30,7 +29,7 @@ export default function RootLayout({ children }) {
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4426518773218222"
-        crossorigin="anonymous"></Script>
+        crossOrigin="anonymous"></Script>
       <body className={inter.className}>
         <CookieConsent />
         {children}
