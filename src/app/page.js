@@ -7,14 +7,14 @@ import SideBar from "./components/SideBar/SideBar";
 import InteractiveMap from "./components/InteractiveMap/InteractiveMap";
 import Books from "./components/Books/Books";
 import Instagram from "./components/Instagram/Instagram";
+import President from "./components/president/President";
 
 export default function Home() {
   return (
     <main>
       <Header/>
      <Spotlight/>
-      <InteractiveMap/>
-      <section className="container-other">
+     <section className="container-other">
         <div className="main-contents">
           <OtherArticles/>
           <Books/>
@@ -24,6 +24,9 @@ export default function Home() {
           <SideBar/>
         </aside>
       </section>
+     {/*  <InteractiveMap/> */}
+     <President/>
+      
       <Footer/>
     </main>
   );

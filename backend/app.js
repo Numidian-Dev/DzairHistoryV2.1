@@ -6,6 +6,7 @@ const books = require("./api/dataBooks");
 const axios = require("axios");
 const _ = require("lodash");
 const legals = require("./api/legals");
+const  president  = require('./api/president');
 
 const app = express();
 const removeAccents = (str) => {
@@ -181,5 +182,7 @@ app.get("/api/legals/:param", (req, res)=>{
   
   res.json(legal)
 })
-
+app.get("/api/presidents", (req,res)=>{
+  res.json(president)
+})
 module.exports = app;
