@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <GoogleAnalytics gaId="G-7MKNM1FX1N" />
       <GoogleTagManager gtmId="GTM-K8M53XZ" />
       <Script
-        async
+      strategy="afterInteractive"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4426518773218222"
         crossOrigin="anonymous"></Script>
       <body className={inter.className}>
