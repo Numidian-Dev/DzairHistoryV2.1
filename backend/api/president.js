@@ -63,7 +63,7 @@
         placeOfDaed:"",
         title:"Quatrième Président de la République",
         presidence:"31 janvier 1994 — 27 avril 1999",
-        img:"/president/Liamine_Zéroual.jpg",
+        img:"/president/Liamine_Zeroual.jpg",
     },
     {
         id:7,
