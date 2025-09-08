@@ -1,8 +1,17 @@
-import react from "react";
+import react,{useEffect} from "react";
 import Script from "next/script";
 import TitleSection from "../../titleSection/TitleSection";
 
 const Sidebar = () => {
+   useEffect(() => {
+      if (typeof window !== "undefined") {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.error("Adsense error", e);
+        }
+      }
+    }, []);
   return (
     <aside className="aside-categorie">
       <div className="sidebar-categorie">
