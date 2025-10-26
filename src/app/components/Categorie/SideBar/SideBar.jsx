@@ -1,3 +1,4 @@
+"use client"
 import react,{useEffect} from "react";
 import Script from "next/script";
 import TitleSection from "../../titleSection/TitleSection";

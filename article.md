@@ -1,1 +1,53 @@
- <h2>Un visage inoubliable du théâtre et du cinéma algérien</h2> <p class='firstP'> Connaissez-vous Ahmed Ayad, icône incontournable du théâtre et du cinéma algérien, plus connu sous le nom de Rouiched ? Derrière ce pseudonyme se cache un parcours exceptionnel, celui d’un enfant de la Casbah devenu l’un des visages les plus aimés du pays. Retour sur la vie d’un artiste qui a su faire rire, émouvoir et marquer des générations entières. </p> <div> <img class='one-img-vr' src='/public/article/Alger/rouiched/Ahmed_Ayad_(Rouiched).jpg' alt='Ahmed_Ayad_(Rouiched)'> </div> <h2>Des rues de la Casbah à la scène</h2> <p> Né dans la célèbre Casbah d’Alger au sein d’une famille kabyle originaire d’Azeffoun, dans la wilaya de Tizi-Ouzou, le jeune Ahmed Ayad grandit dans un environnement modeste. Très tôt, il enchaîne les petits boulots notamment comme vendeur de journaux sans se douter qu’il deviendra un jour une légende nationale. </p> <p> Entre deux cris dans les ruelles animées d’Alger, son talent naturel pour le jeu et la comédie attire l’attention. C’est Mahboub Stambouli, figure du théâtre algérien, qui le remarque et le guide vers les planches. L’enfant devient alors « Rouiched », un surnom affectueux inspiré de son mentor Rachid Ksentini. </p> <h2>Une ascension fulgurante</h2> <p> En 1942, Rouiched rejoint la troupe de Mahieddine Bachtarzi. Autodidacte, il apprend vite et brille sur scène. Dans l’Algérie encore coloniale, son humour devient un outil de résistance, une manière de dénoncer les injustices avec finesse et ironie. Derrière le rire, il y a une lucidité mordante. Il devient rapidement une voix des sans-voix, un miroir critique mais tendre de la société. </p> <div> <img class='one-img-hr' src='/public/article/Alger/rouiched/guerre.jpg' alt='Rouiched'> </div> <p> Certains le comparent à Charlie Chaplin, mais Rouiched a sa propre sensibilité : celle d’un peuple blessé, mais jamais brisé. </p> <h2>L’épreuve de la guerre</h2> <p> La guerre de libération nationale interrompt sa trajectoire. Pour son engagement militant, Rouiched est incarcéré pendant deux ans et demi à la prison de Serkadji. Cette épreuve douloureuse laissera une trace indélébile dans sa vie, mais aussi dans son art, qu’elle viendra nourrir de profondeur. </p> <h2>Le cinéma, un nouveau souffle</h2> <p> C’est en 1966 que Rouiched fait ses premiers pas au cinéma dans « La Bataille d’Alger », où il apparaît brièvement. Mais c’est l’année suivante que tout bascule avec « Hassan Terro ». Le film, qu’il co-écrit, devient un véritable phénomène national. </p> <p> Le personnage de Hassan Terro Algérien ordinaire, peureux mais attachant, plongé malgré lui dans les turbulences de l’histoire séduit instantanément. Inspiré de ses souvenirs de prison et de la vie quotidienne, Rouiched y injecte une vérité et une humanité bouleversantes. Il fait rire, mais sans jamais trahir la réalité. </p> <div class='one-img-hr'> <img  src='/public/article/Alger/rouiched/hassan Terro3.jpg' alt='Rouiched'> </div> <h2>Une légende populaire</h2> <p> Le succès de Hassan Terro ouvre la voie à une série de films devenus cultes : « Hassan Taxi », « Hassan Niya », « L’Évasion de Hassan Terro »… Chaque nouvelle aventure fait mouche, renforçant le lien entre Rouiched et le public. </p> <p> Mais l’artiste ne s’arrête pas là. Il brille également au théâtre notamment avec la pièce « El Ghoula », à la radio avec des programmes comme « Tlata Izehwaniyen », et même dans la chanson. </p> <div class='two-img' > <div class='img'> <img src='/public/article/Alger/rouiched/theatre.jpg' alt='Rouiched'> </div> <div class='img'> <img src='/public/article/Alger/rouiched/hassan nya.jpg' alt='Rouiched'> </div> </div> <p> Loin de se cantonner à la comédie, Rouiched révèle aussi une profondeur dramatique. Dans « L’Opium et le Bâton », il montre une facette plus sombre, plus grave. Il excelle dans tous les registres : la mélancolie, la nostalgie, l’espoir. Un acteur complet, un artiste total. </p> <div> <img class='one-img-vr' src='/public/article/Alger/rouiched/l&apos;opium et le baton.jpg' alt='Rouiched'> </div> <h2>Une mémoire vivante</h2> <p> Le 28 janvier 1999, Rouiched s’éteint. Mais son rire, sa voix, ses répliques, ses mimiques continuent de résonner dans les foyers algériens. Il est entré dans l’imaginaire collectif, devenant un symbole intemporel de l’Algérie. </p> <p> En 2017, il est décoré à titre posthume, hommage mérité à un homme dont l’œuvre a traversé les époques. Son fils, Mustapha Ayad, perpétue aujourd’hui son héritage. </p> <p> Rouiched, ce n’est pas qu’un nom. C’est une époque, une identité, une mémoire vivante. À travers lui, c’est l’âme d’un peuple qui s’est exprimée, entre larmes et éclats de rire. </p> <p> Son génie ? Avoir su faire rire sans jamais renoncer à dire la vérité. Et c’est sans doute pour cela qu’il restera, pour toujours, l’un des plus grands artistes de l’histoire algérienne. </p>
+<h1>Dahmane El Harrachi, la voix du peuple</h1>
+
+
+<p class='firstP'>Le nom de Dahmane El Harrachi revient toujours, il a su marquer les esprits avec sa voix un peu rauque et su toucher les cœurs des algériens, mais pas seulement, il a également réussi à atteindre le cœur de tout les exiler du monde grâce à sa musique « Ya Rayah », qui a su traverser le temps.</p>
+
+<div class='one-img-vr-float'> <img src='/article/Alger/Dahmane-el-harrachi/Dahmane-El-Harrachi.jpg' alt='Dahmane El Harrachi'> </div>
+
+<h2>Un enfant d’El Harrach</h2>
+<p>Dahmane El Harrachi nait en 1926 à El Biar, sous le nom de Abderrahmane Amrani, dans une famille de onze enfants originaire wilaya de Khenchela, il est le dernier-né de cette famille installé à Alger dans les années 20, son père était muezzin à la grande mosquée d’Alger.</p>
+
+<p>Il vit d’abord avec sa grande famille à Belcourt, l’actuel Belouizdad puis à El Harrach, c’est dans ce quartier populaire d’Alger que Dahmane (diminutif de Abderrahmane) trouvera son nom de scène “El Harrachi”.</p>
+
+<p class='read-to'><span class='title-read-to'>Lire aussi :</span><a href='/article/bologhine-ibn-ziri'>Bologhine Ibn Ziri, le fondateur d'Alger</a></p> 
+
+<h2>Des cafés d’Alger aux nuits de France</h2>
+<p>Travailleur, adolescent, il enchaine les boulots, d’abord cordonnier, ensuite receveur dans le tramway d’Alger. Pendant ce temps, il se met au banjo, un instrument peu courant dans le chaâbi traditionnel, et reprend les musiques de chanteurs chaâbi tel que Khelifa Belkacem. Très vite, il devient un prodige banjo. Dans les cafés d’Alger, il chante ce qu’il voit, la rue, la débrouille, les amours compliqués.</p>
+
+<p>Puis vient le temps de l’exil. Comme beaucoup d’Algériens de l’époque, il part tenter sa chance en France. En 1949, il s’installe d’abord à Lille, ensuite Marseille et enfin à Paris.</p>
+
+<p>Il multiplie les représentations au banjo pendant plusieurs années dans les cafés maghrébins de France, Entre autres avec le maître de la musique chaâbi cheikh El Hasnaoui.</p>
+
+<p>Il reprend également des anciennes musiques de Melhoun, sentant que ce vieux répertoire n’atteint plus sont publics qu’il décide d’écrire ses propres chansons, il devient la voix des travailleurs immigrés, ceux qui bossent dur le jour et pleurent un peu le soir en pensant au pays.</p>
+
+<h2>« Ya Rayah », une musique pour les exilées</h2>
+<p>Dans cette dynamique, il écrit une chanson qui deviendra emblématique « Ya Rayah » est une de ses chansons fortes, écrite avec des mots qui touchent tout le monde, pour chanter la douleur du départ et l’attente d’un retour.</p>
+
+<blockquote>« Ô toi qui t’en vas, tu finiras par revenir… »</blockquote>
+
+<p>Quelques années plus tard, en 1997, une autre icône de la musique algérienne, Rachid Taha reprendra cette chanson. Il en fera une version célèbre, qui traversera les frontières, « Ya Rayah » deviendra la musique chaabi la plus reprise à l’international et la plus célèbre.</p>
+
+<h2>Le retour et l’héritage</h2>
+<p>Après des années passées en France, Dahmane rentre en Algérie dans les années 70, en 1974, il remonte sur scène à Alger, à la Salle Atlas.</p>
+
+<p class='read-to'><span class='title-read-to'>Lire aussi :</span><a href='/article/cheikh_el_anka_une_icône_de_la_culture_populaire_algérienne'>Cheikh El Anka une icône de la culture populaire algérienne.</a></p> 
+
+<p>En 1980, Dahmane passe devant la caméra dans <i>Saha Dahmane</i>, un film où il joue son propre rôle. Durant la même année alors qu’il n’avait que 54 ans, il décède tragiquement dans un accident de voiture à Aïn Benian. Il repose aujourd’hui au cimetière d’El Kettar, aux côtés des grandes figures de la mémoire algérienne.</p>
+<div class='one-img-hr'> <img src='/article/Alger/Dahmane-el-harrachi/Saha-Dahmane.jpg' alt='Saha Dahmane'> </div>
+<p>Son fils, Kamel El Harrachi dont il a légué la voix et son style, fait vivre cet héritage avec la même passion. Grâce à lui, les chansons de son père continuent de vivre.</p>
+<div class='one-img-hr'> <img src='/article/Alger/Dahmane-el-harrachi/Kamel-El-Harrachi.jpg' alt='Kamel El Harrachi '> </div>
+
+<h2>Une icône qui dépasse la musique</h2>
+<p>Dahmane El Harrachi, c’était un chanteur, oui, mais surtout un poète du peuple.
+Ses chansons racontent ce que beaucoup ressentaient sans savoir le dire. Il a transformé la nostalgie en art, et donné une voix à ceux qu’on n’écoutait pas.</p>
+
+<blockquote>« Celui qui part finira par revenir. »</blockquote>
+
+<p>Plus qu’une phrase, c’est toute une philosophie.
+Encore aujourd’hui, dans un taxi à Alger ou un café de Barbès, on l’entend. Et à chaque fois, on se dit « l’Algérie, ça ne s’oublie pas. »</p>
+
+
+
+
+ 
